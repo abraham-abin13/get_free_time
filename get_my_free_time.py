@@ -16,8 +16,8 @@ DATE = datetime.datetime.now().strftime('%Y-%m-%d')
 
 USERNAME = '....'
 PASSWORD = "...."
-URL = "https://caldav.icloud.com" # if using ical
-CALENDAR_NAMES = ['Work']  #add the names of calendars to use
+URL = "https://caldav.icloud.com"  # if using ical
+CALENDAR_NAMES = ['Work']  # add the names of calendars to use
 NUM_WEEKS = 2
 DAY_START_HOUR = datetime.time(hour=8, minute=0)
 DAY_END_HOUR = datetime.time(hour=17, minute=0)
@@ -207,7 +207,6 @@ class freeTime(object):
         self.print_available_times()
 
 
-
 # %%
 # -----------
 # main
@@ -218,7 +217,7 @@ if __name__ == "__main__":
     parser.add_argument('-n', '--num_weeks', action='store', type=int,
                         default=NUM_WEEKS,
                         dest='num_weeks',
-                        help='number of weeks from today to provide free time')
+                        help='number of weeks from today to provide free time')  
 
     parser.add_argument('-s', '--day_start_hour', action='store', type=int,
                         default=False,
